@@ -1,17 +1,20 @@
 import teams from "./teams.json";
+import overs from "./overs.json"
 import "./home.css"
-export default function Teams() {
+import Menu from "./menu";
+import {useReducer} from "react"
+import {reducer, initialState} from "./state"
+
+
+export default function Teams() { 
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  console.log({state})
+
   return (
     <div>
-      <div className="teambutton">
-
-      {teams.map((team) => {
-        console.log(team);
-        return <div>
-            {team?.name}
-        </div>;
-      })}
-      </div>
+      <Menu teams={teams} overs={overs} dispatch={dispatch} state={state}></Menu>
+      
     </div>
-  );
-}
+  )
+} 

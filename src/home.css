@@ -2,4 +2,66 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: black;
 }
+#rteam{
+    background-color: rgb(231, 214, 214);
+    border-color: black;
+    border-style: double;
+}
+.overbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+}
+#rover{
+    background-color: rgb(231, 214, 214);
+    border-color: black;
+    border-style: double;
+}
+.startgame{
+    background-color: rgb(12, 168, 235);
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+.mainbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .mainbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .mainbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .mainbutton:hover span {
+    padding-right: 25px;
+  }
+  
+  .mainbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

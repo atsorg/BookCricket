@@ -1,6 +1,6 @@
 [
     {
-        "name": "India",
+        "name": "INDIA",
         "players": [
             "Sachin Tendulkar", 
             "Virendra Sehwag",
@@ -16,7 +16,39 @@
         ]
     },
     {
-        "name": "Austraiia",
+        "name": "AUSTRALIA",
+        "players": [
+            "Ricky Pointing", 
+            "Adam Gilchrist",
+            "Bradd Hogg",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Breet Lee"
+        ]
+    },
+    {
+        "name": "NEW-ZEALAND",
+        "players": [
+            "Ricky Pointing", 
+            "Adam Gilchrist",
+            "Bradd Hogg",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Virendra Sehwag",
+            "Breet Lee"
+        ]
+    },
+    {
+        "name": "ENGLAND",
         "players": [
             "Ricky Pointing", 
             "Adam Gilchrist",
