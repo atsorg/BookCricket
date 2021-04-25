@@ -7,14 +7,30 @@ export default function Menu({ teams, overs, dispatch, state }) {
   };
 
   const handleRemoveTeam = (team) => {
-    dispatch({ type: actionTypes.SELECT_TEAM, data: team });
+    dispatch({ type: actionTypes.REMOVE_TEAM, data: team });
   };
   return (
     <div>
-      {state.team ? (
-        <div id="mainclose" className="mainbutton">
-          {state.team?.name}
-          <HighlightOffIcon onClick={() => {}}></HighlightOffIcon>
+      {state.selectTeam?.yourTeam ? (
+        <div>
+          <div id="mainclose" className="mainbutton">
+            {state?.selectTeam?.yourTeam?.name}
+            <HighlightOffIcon
+              onClick={() => handleRemoveTeam(state.selectTeam?.yourTeam)}
+            ></HighlightOffIcon>
+          </div>
+          {state?.selectTeam?.oppositionTeam ? (
+            <div id="mainclose" className="mainbutton">
+              {state?.selectTeam?.oppositionTeam?.name}
+              <HighlightOffIcon
+                onClick={() =>
+                  handleRemoveTeam(state.selectTeam?.oppositionTeam)
+                }
+              ></HighlightOffIcon>
+            </div>
+          ) : (
+            <h2>Select Your Opposition</h2>
+          )}
         </div>
       ) : (
         <h2>Select Your Teams</h2>
